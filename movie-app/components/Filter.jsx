@@ -20,12 +20,14 @@ const Filter = ({ filter, onFilterChange }) => {
         placeholder="Search by title"
         value={filter.title}
         onChange={handleTitleChange}
+        className="text-black p-2 mr-4"
       />
       <input
         type="number"
         placeholder="Minimum rating"
         value={filter.rating}
         onChange={handleRatingChange}
+        className="text-black p-2 mr-4"
         min="0"
         max="5"
       />
